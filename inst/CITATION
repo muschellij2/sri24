@@ -1,0 +1,14 @@
+structure(list(sri24 = structure(list(title = "The {SRI24} multichannel atlas of normal adult human brain structure", 
+    author = structure(list(structure(list(given = "Torsten", 
+        family = "Rohlfing", role = NULL, email = NULL, comment = NULL), .Names = c("given", 
+    "family", "role", "email", "comment")), structure(list(given = c("Natalie", 
+    "M"), family = "Zahr", role = NULL, email = NULL, comment = NULL), .Names = c("given", 
+    "family", "role", "email", "comment")), structure(list(given = c("Edith", 
+    "V"), family = "Sullivan", role = NULL, email = NULL, comment = NULL), .Names = c("given", 
+    "family", "role", "email", "comment")), structure(list(given = "Adolf", 
+        family = "Pfefferbaum", role = NULL, email = NULL, comment = NULL), .Names = c("given", 
+    "family", "role", "email", "comment"))), class = "person"), 
+    journal = "Human brain mapping", volume = "31", number = "5", 
+    pages = "798--819", year = "2010", publisher = "Wiley Online Library"), .Names = c("title", 
+"author", "journal", "volume", "number", "pages", "year", "publisher"
+), bibtype = "Article", key = "sri24")), class = "bibentry", strings = structure(character(0), .Names = character(0)), .Names = "sri24")
