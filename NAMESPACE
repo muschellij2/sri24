@@ -2,3 +2,5 @@
 
 export(sri24_image_df)
 export(sri24_images)
+export(sri24_label_df)
+export(sri24_label_list)
