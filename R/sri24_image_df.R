@@ -5,7 +5,14 @@
 #' @export
 #'
 #' @examples
+#' library(neurobase)
 #' sri24_image_df()
+#' imgs = sri24_images()
+#' imgs
+#' imgs["erly"]
+#' img = readnii(imgs["erly"])
+#' ortho2(img)
+#'
 #'
 sri24_image_df = function() {
   stubs = c("erly_unstrip", "erly", "fa", "l1", "late_unstrip", "late",

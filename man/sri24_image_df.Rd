@@ -17,6 +17,13 @@ character vector for \code{sri24_images}
 SRI24 Images
 }
 \examples{
+library(neurobase)
 sri24_image_df()
+imgs = sri24_images()
+imgs
+imgs["erly"]
+img = readnii(imgs["erly"])
+ortho2(img)
+
 
 }

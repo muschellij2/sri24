@@ -10,7 +10,8 @@ Suggests:
     knitr,
     rmarkdown,
     covr,
-    testthat
+    testthat,
+    neurobase
 Encoding: UTF-8
 LazyData: true
 ByteCompile: true
