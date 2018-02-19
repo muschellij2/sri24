@@ -5,7 +5,7 @@ Description: SRI24 is an 'MRI'-based atlas of normal adult human brain anatomy, 
 Authors@R: c(person(given = "John", family = "Muschelli", 
         role = c("aut", "cre"), email = "muschellij2@gmail.com", 
         comment = NULL))
-License: CC-BY-SA + file LICENSE
+License: CC BY-SA + file LICENSE
 Suggests: 
     knitr,
     rmarkdown,

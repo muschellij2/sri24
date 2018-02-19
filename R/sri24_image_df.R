@@ -14,8 +14,10 @@ sri24_image_df = function() {
            "spgr", "suptent", "tissues", "tzo116plus")
   imgs = paste0(stubs, ".nii.gz")
   names(imgs) = stubs
-  imgs = sapply(imgs, system.file, package = "sri24")
-  imgs = imgs[ imgs != ""]
+  imgs = sapply(imgs, function(x) {
+    system.file("extdata", x, package = "sri24")
+  })
+  imgs = imgs[ imgs != "" ]
   if (length(imgs) == 0) {
     return(NULL)
   }
