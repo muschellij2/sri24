@@ -20,6 +20,7 @@ sri24_label_list = function() {
   writeLines(lab_file, tfile)
   tab = read.table(file = tfile, header = FALSE, as.is = TRUE)
   colnames(tab) = c("index", "label", "R", "G", "B", "A")
+  tab$color = rgb(tab$R, tab$G, tab$B, tab$A, maxColorValue = 255)
   L = list()
   L$`TZO` = tab
 
@@ -31,6 +32,7 @@ sri24_label_list = function() {
   writeLines(lab_file, tfile)
   tab = read.table(file = tfile, header = FALSE, as.is = TRUE)
   colnames(tab) = c("index", "label", "R", "G", "B", "A")
+  tab$color = rgb(tab$R, tab$G, tab$B, tab$A, maxColorValue = 255)
 
   L$`LPBA40` = tab
 
@@ -45,3 +47,24 @@ sri24_label_df = function(label = c("TZO", "LPBA40")) {
   L = sri24_label_list()
   L[[label]]
 }
+
+#' @rdname sri24_label_list
+#' @export
+sri24_label_colors = function(label = c("TZO", "LPBA40")) {
+  tab = sri24_label_df(label)
+  tab$color
+}
+
+
+#' @rdname sri24_label_list
+#' @export
+sri24_label_file = function(label = c("TZO", "LPBA40")) {
+  df = sri24::sri24_image_df()
+  label = match.arg(label)
+  rn = switch(label,
+              TZO = "tzo116plus",
+              "LPBA40" = "lpba40")
+  fname = df[rn, ]$file
+  fname
+}
+

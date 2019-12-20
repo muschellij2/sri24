@@ -3,11 +3,17 @@
 \name{sri24_label_list}
 \alias{sri24_label_list}
 \alias{sri24_label_df}
+\alias{sri24_label_colors}
+\alias{sri24_label_file}
 \title{SRI24 Label Look Up Tables (LUT)}
 \usage{
 sri24_label_list()
 
 sri24_label_df(label = c("TZO", "LPBA40"))
+
+sri24_label_colors(label = c("TZO", "LPBA40"))
+
+sri24_label_file(label = c("TZO", "LPBA40"))
 }
 \arguments{
 \item{label}{The specific label LUT to read in}
