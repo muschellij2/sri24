@@ -28,4 +28,6 @@ SRI24 Label Look Up Tables (LUT)
 sri24_label_list()
 sri24_label_df()
 sri24_label_df("LPBA40")
+sri24_label_colors("LPBA40")
+sri24_label_file()
 }

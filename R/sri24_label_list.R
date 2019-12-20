@@ -10,6 +10,8 @@
 #' sri24_label_list()
 #' sri24_label_df()
 #' sri24_label_df("LPBA40")
+#' sri24_label_colors("LPBA40")
+#' sri24_label_file()
 #' @importFrom utils read.table
 sri24_label_list = function() {
   lab_file = system.file("extdata", "SRI24-tzo116plus.txt", package = "sri24")
