@@ -5,6 +5,7 @@
 #'
 #' @return A list of \code{data.frame}s or a specific \code{data.frame}
 #' @export
+#' @importFrom grDevices rgb
 #'
 #' @examples
 #' sri24_label_list()
